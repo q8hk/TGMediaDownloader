@@ -83,4 +83,7 @@ def handle_instagram(update, context):
 updater = telegram.ext.Updater(token=TELEGRAM_TOKEN, use_context=True)
 
 # Add the handlers for the different types of media links
-updater.dispatcher.add_handler(telegram.ext.CommandHandler('youtube', handle_y
+updater.dispatcher.add_handler(CommandHandler('youtube', handle_youtube))
+updater.dispatcher.add_handler(CommandHandler('twitter', handle_twitter))
+updater.dispatcher.add_handler(CommandHandler('instagram', handle_instagram))
+
