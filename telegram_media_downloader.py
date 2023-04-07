@@ -5,7 +5,7 @@ import tweepy
 from pytube import YouTube
 import instaloader
 import os
-from telegram.ext import CommandHandler
+from telegram.ext import CommandHandler, Updater
 
 
 # Set up logging
@@ -15,10 +15,15 @@ logger = logging.getLogger(__name__)
 
 # Read environment variables
 TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
+logger.info(TELEGRAM_TOKEN)
 TWITTER_CONSUMER_KEY = os.environ.get('TWITTER_CONSUMER_KEY')
+logger.info(TWITTER_CONSUMER_KEY)
 TWITTER_CONSUMER_SECRET = os.environ.get('TWITTER_CONSUMER_SECRET')
+logger.info(TWITTER_CONSUMER_SECRET)
 TWITTER_ACCESS_TOKEN = os.environ.get('TWITTER_ACCESS_TOKEN')
+logger.info(TWITTER_ACCESS_TOKEN)
 TWITTER_ACCESS_SECRET = os.environ.get('TWITTER_ACCESS_SECRET')
+logger.info(TWITTER_ACCESS_SECRET)
 
 # Set up the telegram bot
 bot = telegram.Bot(token=TELEGRAM_TOKEN)
