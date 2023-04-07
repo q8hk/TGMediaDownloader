@@ -5,6 +5,8 @@ import tweepy
 from pytube import YouTube
 import instaloader
 import os
+from telegram.ext import CommandHandler
+
 
 # Set up logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
