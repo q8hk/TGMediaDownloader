@@ -4,3 +4,4 @@ beautifulsoup4
 youtube-dl
 tweepy
 instaloader
+pytube
